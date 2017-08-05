@@ -1,0 +1,266 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+    	<script src="js/respond.js"></script>
+    	<head>
+		<meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>Rules of Exam</title>
+        <meta name="description" content="Custom Login Form Styling with CSS3" />
+        <meta name="keywords" content="css3, login, form, custom, input, submit, button, html5, placeholder" />
+        <meta name="author" content="Codrops" />
+        <link rel="shortcut icon" href="../favicon.ico"> 
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+		<script src="js/modernizr.custom.63321.js"></script>
+		<script type="text/javascript" src="jquery-2.1.3.min.js"></script>
+		<!--[if lte IE 7]><style>.main{display:none;} .support-note .note-ie{display:block;}</style><![endif]-->
+    
+		
+		<style>
+			p.serif 
+			{
+   			 	font-family: "Times New Roman", Times, serif;
+			}
+
+			/*css for the text size zoom controls */
+		    		#wrapper{background: #fff;} 
+		    			
+		    		#controls  {  
+		              padding:2px;
+		              background:#333;           
+		              text-align:center;
+		              transition:.25s ease-out;}
+
+		   			#controls a {
+		   			  font-size:24px;
+		              color:#aaa;
+		              font-weight:bold;
+		              padding: 5px;}
+
+		    		#controls a:hover {
+		    		  color:#fff;
+		              background:#000;
+		              transition:.25s ease-out;}
+
+					#controls a:focus  {  
+					  background:#000;
+		              color:#fff ;}
+
+					#small     {  font-size:10px !important;}
+					#medium    {  font-size:14px !important;}
+					#large     {  font-size:18px  !important;}
+
+			
+		</style>
+
+
+		<script type="text/javascript">
+
+		/*JAVASCRIPT TO INCREASE THE TEXT SIZE OF QUESTIONS */
+  			$(document).ready(function(){
+  
+					  $("#small").click(function(event){
+					    event.preventDefault();
+					    $("#zoom").animate({"font-size":"24px"});					    
+					    
+					  });
+					  
+					  $("#medium").click(function(event){
+					    event.preventDefault();
+					    $("#zoom").animate({"font-size":"32px"});				   
+					    
+					  });
+					  
+					  $("#large").click(function(event){
+					    event.preventDefault();
+					    $("#zoom").animate({"font-size":"40px"});
+					    
+					  });
+					  
+					  $( "a" ).click(function() {
+					   $("a").removeClass("selected");
+					  $(this).addClass("selected");
+					  
+					 });
+
+				});
+  		</script>		
+
+
+		
+	</head>
+	
+	<body>
+
+	<h2><center>*** &nbsp<u>RULES OF ONLINE EXAMINATIONS</u>&nbsp***</center></h2><br>
+
+
+
+<h3><mark><u><span class="glyphicon glyphicon-tags">&nbsp</span> How do I give the Examination ?</u></mark></h3><br>
+<h4>
+<span class="badge">1</span>Login to the online examination website using your own Roll no.
+		<div class="container">
+		<section class="main">
+				<form class="form-1" >
+					<p class="field">
+						<input type="text" name="Reg_No" placeholder="Roll Number">
+						<i class="icon-user icon-large"></i>
+					</p>
+					
+					<p class="submit">
+						<button type="submit" name="submit"><i class="icon-arrow-right icon-large"></i></button>
+					</p>
+				</form>
+			</section>
+		</div><br><br>
+
+<span class="badge">2</span> Once you login with your Roll no, your Roll no,Name and Course Code for your exam will appear.
+  Click on Start button to start the examination.<br><br>
+  <center>
+  <button class="btn btn-primary" type="submit"name="submit"data-toggle="tooltip" data-placement="right" 
+    title="Click here to start the exam" >Start</button>
+    </center><br><br>
+
+<span class="badge">3</span> After clicking Start ,the examination begins. At the top of page , all of your details will be displayed.
+	A single question along with its 4 options will appear at a time.  You can select only one out of the 4 options.
+	Below is an example :<br><br>
+					<center>
+						<blockquote>
+							<table class="table-condensed"> 							
+							<tr><td><span class="style2" p id="1"><h4>Que 1 :Which is your favorite color?</h4></span></td></tr>
+							<tr><td class=style8><h5><input type=radio name=ans  value=1>Red</h5></td></tr>
+							<tr><td class=style8><h5><input type=radio name=ans  value=2>Yellow</h5></td></tr>
+							<tr><td class=style8><h5><input type=radio name=ans  value=3>Green</h5></td></tr>
+							<tr><td class=style8><h5><input type=radio name=ans  value=4>Blue</h5></td></tr>
+							
+							
+							</table>
+						</blockquote>
+					</center><br><br>
+<span class="badge">4</span> Submit an answer using <button class="btn btn-primary ">Submit</button> button.&nbsp&nbspMove to previous question using <button class="btn btn-primary ">Previous</button> button .&nbsp&nbspMove to next question using <button class="btn btn-primary">Next</button> button.<br><br><br>
+
+<span class="badge">5</span> You can directly attempt any of the 40 question by clicking on the 1-40 navigation button present on the right-hand side.
+	<br><br>
+		<div class="col-md-5">	
+			<div id="d1">
+				<div class="row">
+					<div class="col-md-1 col-md-offset-7">
+						<button class="btn btn-default" type="submit" name="submit" id="s1" value="01">01</button>
+					</div>	
+					<div class="col-md-1">
+						<button class="btn btn-default" type="submit" name="submit" id="s2" value="02">02</button>
+					</div>
+					<div class="col-md-1">
+						<button class="btn btn-default" type="submit" name="submit" id="s3" value="03">03</button>
+					</div>
+					<div class="col-md-1">
+						<button class="btn btn-default" type="submit" name="submit" id="s4" value="04">04</button>
+					</div>
+					<div class="col-md-1">
+						<button class="btn btn-default" type="submit" name="submit" id="s5" value="05">05</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<br><br><br>
+
+
+	
+
+<span class="badge">6</span> After answering a question,that particular button will turn green indicating that it has been solved.<br><br><br>
+<div class="col-md-5">	
+			<div id="d1">
+				<div class="row">
+					<div class="col-md-1 col-md-offset-7">
+						<button class="btn btn-default btn-success" type="submit" name="submit" id="s1" value="01">01</button>
+					</div>	
+					<div class="col-md-1">
+						<button class="btn btn-default" type="submit" name="submit" id="s2" value="02">02</button>
+					</div>
+					<div class="col-md-1">
+						<button class="btn btn-default" type="submit" name="submit" id="s3" value="03">03</button>
+					</div>
+					<div class="col-md-1">
+						<button class="btn btn-default btn-success" type="submit" name="submit" id="s4" value="04">04</button>
+					</div>
+					<div class="col-md-1">
+						<button class="btn btn-default" type="submit" name="submit" id="s5" value="05">05</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<br><br><br>
+
+		<div class="row">
+		<div class="col-md-7">
+			<div id="zoom"><span class="badge">7</span> You can increase the text size of the questions by choosing the text size of your choice.</div>
+		</div>
+
+		<div class="col-md-1 "> 
+			<div id="wrapper">
+			  	<div id="controls">
+				    <a href="#" id="small">A</a>
+				    <a href="#" id="medium" class="selected">A</a>
+				    <a href="#" id="large">A</a>
+				</div>
+			</div>
+ 		</div>
+  	</div>
+  	<br><br>
+
+<span class="badge">8</span>The exam duration will be 60 minutes.<br><br>
+<span class="badge">9</span> After you have answered all the questions ,you can end the examination by clicking <button class="btn btn-danger ">End Exam</button> button.<br><br>
+
+<span class="badge">10</span> Ending the exam will bring you a link  &nbsp: &nbsp<a >Click here for result</a>&nbsp.&nbspSelecting on it will bring yor result.		<br><br><br>
+
+</h4>
+
+
+
+<h2><mark><u><span class="glyphicon glyphicon-info-sign">&nbsp</span> Instructions to follow :</u></mark></h2>	<br>
+
+
+<p  class="serif">
+<h3><mark>1.General Conduct of Candidates</mark></h3>
+<h4>
+1.1.Candidates must not indulge in any behaviour or conduct which may disturb other candidates or disrupt the smooth progress of an examination.<br>
+1.2.Candidates are not permitted to smoke in any part of the examination room.<br>
+1.3.Candidates must obey the instructions of any invigilator and their attention is drawn to the regulations for the invigilation of examinations governing admission to and departure from the examination room.<br>
+</h4>
+
+</p>
+
+<p  class="serif">
+<h3><mark>2.Conduct of Candidates before online examination </mark></h3>
+<h4>
+2.1.Candidates are forbidden to take into the examination room any unauthorized books, manuscripts, notes, bags, cases or any means whereby they may improperly obtain assistance in their work. All such materials, including handbags must be placed on a table outside the examination room.<br> 
+2.2.Candidates are forbidden to take into the examination room electronic transmission device such as Mobile phones, pagers, PDA etc, or any digital storage media such as Flash drives, CD, Floppy disc etc.<br> 
+2.3.Candidates are forbidden to take into the examination hall paper of any sort. A wipe-able writing slate (or similar material) shall be provided in the examination hall should any candidate require it.<br> 
+2.4.Candidates must be at the venue of the examination at least 10 minutes before the exam commencement.<br> 
+2.5.Before the commencement of the examination, the candidate must place on the top right hand comer of the desk, their ID card for inspection by one of the invigilators.<br>
+</h4>
+
+</p>
+
+<p  class="serif"> 
+<h3><mark>3.Conduct of Candidates during online examination</mark></h3>
+<h4>
+3.1.Candidates shall only display the examination page throughout the duration of the examination. No other pages should be simultaneously open.<br> 
+3.2.Candidates must “submit” their examination before leaving the exam venue. This is done by clicking on the “submit” icon at the end of the examination. Failure to submit will result in loss of marks for that examination.<br> 
+3.3.Candidates must not use any means whatever to communicate or obtain, directly or indirectly, assistance in their work, or give or attempt to give, directly or indirectly, assistance to any other candidate.<br> 
+3.4.Candidates are permitted to use only personal non-programmable electronic calculators in an examination provided they are silent in operation and have independent power supply.<br> 
+3.5.Any suspected breach of the foregoing Regulations will be the subject of investigation.<br>
+</h4>
+
+</p>
+
+
+	<!--javascript-->
+
+		<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+
+	</body>
+</html>
+ 
